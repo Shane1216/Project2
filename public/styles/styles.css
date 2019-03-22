@@ -18,9 +18,9 @@ header h1 {
 }
 header  {
   height: 100px;
- color: white;
- background-color: rgba(0,0,0,0.8);
- font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  font-family: 'Julius Sans One', sans-serif;
 }
 header ul {
   position: relative;
@@ -98,11 +98,32 @@ h3 {
   color: darkgrey !important;
   font-family: 'Cinzel', serif !important;
 }
+/*changed below*/
 h4 {
   font-size: 18px !important;
-  color: black !important;
-  font-family: 'Cantarell', serif !important;
+  color: darkgrey!important;
+  font-family: 'Cinzel', serif !important;
 }
+
+.card-footer {
+  background-color: darkgrey !important;
+}
+
+h5 {
+  font-size: 24px !important;
+  color: white!important;
+  font-family: 'Cinzel', serif !important;
+}
+
+.form-inline {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.searchbar {
+  background-color: darkgrey;
+}
+/*changed above*/
 a {
   transition: 0.8s ease;
   color: goldenrod!important;
@@ -136,6 +157,7 @@ a:active {
 }
 #notes {
   color: red;
+  padding-left: 20px;
 }
 #del-button
 {
