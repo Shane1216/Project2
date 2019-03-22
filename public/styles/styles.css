@@ -1,3 +1,11 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body {
+  font-family: 'Cinzel', serif;
+  font-family: 'Cantarell', sans-serif;
+  line-height: 34px;
+  text-align: left;
+
+}
