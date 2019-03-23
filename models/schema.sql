@@ -12,7 +12,7 @@ CREATE TABLE trips (
   bikes_allowed BOOLEAN,
 PRIMARY KEY (route_id)
 );
-
+d
 CREATE TABLE calendar_dates (
   service_id VARCHAR(255),
   t_date DATE,
