@@ -35,7 +35,6 @@ CREATE TABLE trips (
   bikes_allowed BOOLEAN,
 PRIMARY KEY (route_id)
 );
-
 CREATE TABLE customer (
     cust_id INT NOT NULL AUTO_INCREMENT,
     cust_name VARCHAR(255) NOT NULL,
