@@ -8,26 +8,28 @@
 // Requiring our models
 let db = require("../models");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Get all examples
-  app.get("/api/rail_stop", function(req, res) {
-    db.rail_stop.findAll({}).then(function(dbRail_stop) {
-      res.json(dbExamples);
-    });
-  });
+  app.get("/api/rail_stop", function (req, res) {
+    db.rail_stop.findAll({})
 
-  // Create a new example
-  app.post("/api/rail_stop", function(req, res) {
-    db.rail_stop.create(req.body).then(function(dbRail_stop) {
-      res.json(dbExample);
-    });
-  });
+    //   .then(function(dbRail_stop) {
+    //     res.json(dbExamples);
+    // });
+    // });
 
-  // Delete an example by id
-  app.delete("/api/rail_stop/:id", function(req, res) {
-    db.rail_stop.destroy({ where: { id: req.params.id } }).then(function(dbRail_stop) {
-      res.json(dbExample);
-    });
+    // // Create a new example
+    // app.post("/api/rail_stop", function(req, res) {
+    //   db.rail_stop.create(req.body).then(function(dbRail_stop) {
+    //     res.json(dbExample);
+    //   });
+    // });
+
+    // Delete an example by id
+    //   app.delete("/api/rail_stop/:id", function(req, res) {
+    //     db.rail_stop.destroy({ where: { id: req.params.id } }).then(function(dbRail_stop) {
+    //       res.json(dbExample);
+    //     });
   });
 };
 

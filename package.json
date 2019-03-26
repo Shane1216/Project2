@@ -26,18 +26,5 @@
   "bugs": {
     "url": "https://github.com/Shane1216/Project2/issues"
   },
-<<<<<<< Updated upstream
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.0.0",
-    "cross-env": "^5.2.0",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
-  }
-=======
   "homepage": "https://github.com/Shane1216/Project2#readme"
->>>>>>> Stashed changes
 }

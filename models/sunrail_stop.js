@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Stop = sequelize.define("Stop", {
+    var Sunrail_stop = sequelize.define("Sunrail_stop", {
         trip_id: DataTypes.INT,
         stop_id: DataTypes.INT,
         stop_name: DataTypes.TEXT,
@@ -7,5 +7,5 @@ module.exports = function (sequelize, DataTypes) {
         departure_time: DataTypes.TEXT,
         zone_id: DataTypes.INT
     });
-    return Stop;
+    return Sunrail_stop;
 };
