@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "Jaina2019",
+    "database": "sunrail",
     "host": "localhost",
     "dialect": "mysql"
   },
