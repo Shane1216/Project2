@@ -1,0 +1,163 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@doctoron Sign out
+3
+0 1 Shane1216/Project2 
+ Code
+ Issues 0
+ Pull requests 0
+ ZenHub
+ Projects 1
+ Wiki
+ Insights
+Project2/views/index.handlebars
+@moonlagoon moonlagoon style updated
+e6b5023 4 days ago
+@Shane1216
+@moonlagoon
+126 lines (118 sloc)  6.55 KB
+    
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Sun Rail</h1>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Map</a></li>
+                            <li><a href="">Log In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="searchbar">
+        <div class="row">
+            <div class="col-md-3 offset-9">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <h1>{{msg}}</h1>
+                    <h2>SunRail Schedule</h2>
+                    <h3>Trip Planner</h3>
+                    <p>Choose Schedule</p>
+                    <p><a href=#>Northbound</a></p>
+                    <p><a href=#>Southbound</a></p>
+
+                    <br>
+                    <div id="notes">BELOW SHOWS UP AFTER NORTH OR SOUTHBOUND SELECTED</div>
+                    <br>
+                    <br>
+                    <h3>Select Station</h3>
+                    <form class="clearfix mb-4" action="POST">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Departure Station
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">DeBary</a>
+                                <a class="dropdown-item" href="#">Sandford</a>
+                                <a class="dropdown-item" href="#">Lake Mary</a>
+                                <a class="dropdown-item" href="#">Longwood</a>
+                                <a class="dropdown-item" href="#">Altamonte Springs</a>
+                                <a class="dropdown-item" href="#">Maitland</a>
+                                <a class="dropdown-item" href="#">Winter Park/Amtrack</a>
+                                <a class="dropdown-item" href="#">Advent Health</a>
+                                <a class="dropdown-item" href="#">Lynx Central</a>
+                                <a class="dropdown-item" href="#">Church Street</a>
+                                <a class="dropdown-item" href="#">Orlando Health/Amtrack</a>
+                                <a class="dropdown-item" href="#">Sand Lake Road</a>
+                                <a class="dropdown-item" href="#">Meadow Woods</a>
+                                <a class="dropdown-item" href="#">Tupperware</a>
+                                <a class="dropdown-item" href="#">Kissimmee/Amtrak</a>
+                                <a class="dropdown-item" href="#">Poinciana</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Arrival Station
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">DeBary</a>
+                                <a class="dropdown-item" href="#">Sandford</a>
+                                <a class="dropdown-item" href="#">Lake Mary</a>
+                                <a class="dropdown-item" href="#">Longwood</a>
+                                <a class="dropdown-item" href="#">Altamonte Springs</a>
+                                <a class="dropdown-item" href="#">Maitland</a>
+                                <a class="dropdown-item" href="#">Winter Park/Amtrack</a>
+                                <a class="dropdown-item" href="#">Advent Health</a>
+                                <a class="dropdown-item" href="#">Lynx Central</a>
+                                <a class="dropdown-item" href="#">Church Street</a>
+                                <a class="dropdown-item" href="#">Orlando Health/Amtrack</a>
+                                <a class="dropdown-item" href="#">Sand Lake Road</a>
+                                <a class="dropdown-item" href="#">Meadow Woods</a>
+                                <a class="dropdown-item" href="#">Tupperware</a>
+                                <a class="dropdown-item" href="#">Kissimmee/Amtrak</a>
+                                <a class="dropdown-item" href="#">Poinciana</a>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Departure Time</h4>
+                        <h4>Arrival Time</h4>
+                        <h4>Estimated Travel Time</h4>
+                        <button id="submit" class="btn float-right">Buy Tickets</button>
+                    </form>
+
+                    <div id="notes">NEED BELOW TO PULL IN DATA FROM DATABASE???</div> <br><br>
+
+                    <h3>SCHEDULE</h3>
+                    <ul id="example-list" class="list-group">
+                        {{#each examples}}
+                        <li data-id="{{this.id}}" class="list-group-item">
+                            <a href="example/{{this.id}}">{{this.text}}</a>
+                            <button id="del-button" class="btn float-right delete">ｘ</button>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
+    </script>
+    <script src="/js/index.js"></script>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
