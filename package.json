@@ -1,22 +1,32 @@
 {
-  "name": "node-handlebars-boilerplate",
+  "name": "Project2",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
+  "description": "code # Project2",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "eslint **/*.js --quiet",
-    "fix": "eslint --fix .",
-    "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+  "directories": {
+    "test": "test"
   },
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "express-handlebars": "^3.0.2",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.1.1",
+    "sequelize-cli": "^5.4.0"
   },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shane1216/Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shane1216/Project2/issues"
+  },
+<<<<<<< Updated upstream
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.0.0",
@@ -27,4 +37,7 @@
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
   }
+=======
+  "homepage": "https://github.com/Shane1216/Project2#readme"
+>>>>>>> Stashed changes
 }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 DROP DATABASE IF EXISTS sunrail;
 CREATE DATABASE sunrail;
 
@@ -80,4 +81,10 @@ CREATE TABLE routes (
   route_type INT,
 PRIMARY KEY (route_id)
 );
+=======
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
+>>>>>>> Stashed changes
 
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
