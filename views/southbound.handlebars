@@ -54,9 +54,8 @@
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
         <h2>SunRail Schedule</h2>
-        <h3>Trip Planner</h3>
-          <p>Choose Schedule</p> 
-        </div>
+        <h3>Trip Planner</h3><br>
+        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" onclick="myFunction('southbound')">Southbound Schedule</button>   </div>
     </div>
           
       <a href='/northbound'><button>Northbound</button></a>
@@ -83,7 +82,15 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
 </script>
 <!--edited below-->
-<script src="./reuben-index-additions.js"></script>
-    
+
+<script>function myFunction(route) {
+  var x = document.getElementById(route);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>    
 </body>
 </html>

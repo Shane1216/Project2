@@ -1,3 +1,245 @@
+/*from project template*/
 .list-group-item {
   line-height: 2.5;
 }
+
+/*from Luna*/
+
+header h1 {
+  color: white;
+  position: relative;
+  font-size: 50px;
+  margin-top: 15px;
+  border-top: 3px solid darkgrey;
+  border-bottom: 3px solid darkgrey;
+  
+}
+header  {
+  height: 100px;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  font-family: 'Cantarell', sans-serif;
+}
+header ul {
+  
+  left: 300px;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+header h1 {
+  float: left;
+  padding: 10px 0;
+}
+nav  {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 20px;
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+}
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 37px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 45px;;
+  text-decoration: none;
+}
+
+/*from Reuben portfolio*/
+
+body {
+    font-family: 'Cinzel', serif;
+    font-family: 'Cantarell', sans-serif;
+    line-height: 34px;
+    text-align: left;
+
+}
+
+p {
+    font-size: 16px !important;
+    color: black !important;
+    font-family: 'Cantarell', serif !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+}
+ 
+
+/*new CSS*/
+
+h1 {
+    padding-bottom: 20px;
+    color: darkgrey!important;
+    font-size: 36px !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 30px !important;
+    color: darkgrey !important;
+    font-family: 'Cinzel', serif !important; 
+}
+
+h3 {
+    font-size: 24px !important;
+    color: darkgrey !important;
+    font-family: 'Cinzel', serif !important;
+}
+/*changed below*/
+h4 {
+    font-size: 18px !important;
+    color: darkgrey!important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.card-footer {
+    background-color: darkgrey !important;
+    
+}
+
+h5 {
+    font-size: 24px !important;
+    color: white!important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.form-inline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.searchbar {
+    background-color: darkgrey;
+   
+}
+
+/*changed above*/
+
+a {
+    transition: 0.8s ease;
+    color: goldenrod!important;
+    text-decoration-line: none; 
+}
+
+a::before {
+  text-decoration: none;
+  content: '';
+
+  height: 5px;
+  
+  background-color: goldenrod;
+  
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+a:hover::before {
+  width: 175px;
+  text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: darkgrey !important; 
+    text-decoration: none !important;
+}
+
+a:active {
+    color: darkgey !important;
+    text-decoration: none !important;
+}
+
+#submit {
+    float: right;
+    font-size: 36px !important;
+    color: white !important;
+    background-color: goldenrod;
+    font-family: 'Cantarell', serif !important;
+    margin-top: 20px !important;
+    margin-bottom: 25px !important;   
+}
+
+#dropdownMenuButton {
+    font-size: 20px !important;
+    color: white !important;
+    background-color: darkgray;
+    font-family: 'Cantarell', serif !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+#notes {
+    color: red;
+    padding-left: 20px;
+}
+
+#del-button
+{
+    color: white !important;
+    background-color: goldenrod !important;
+}
+
+#northbound, #southbound {
+  display: none;
+  margin-top: 20px;
+}
+
+hr {
+  border: 2px solid goldenrod !important;
+}
+
+.login-container {
+padding: 30px;
+}
+
+.price-container {
+ text-align: center;
+}
+
+.price-container .btn {
+ float: right;
+}
+
+.loginlink {
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+ }
