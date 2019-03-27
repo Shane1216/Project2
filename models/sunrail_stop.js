@@ -1,12 +1,12 @@
 module.exports = function (sequelize, DataTypes) {
-    var Sunrail_stop = sequelize.define("Sunrail_stop", {
+    var Sunrail_stops = sequelize.define("Sunrail_stops", {
         trip_id: DataTypes.INTEGER,
         stop_id: DataTypes.INTEGER,
-        stop_name: DataTypes.TEXT,
+        stop_name: DataTypes.STRING,
         direction_id: DataTypes.BOOLEAN,
         zone_id: DataTypes.INTEGER
     }, {
         timestamps: false
     });
-    return Sunrail_stop;
+    return Sunrail_stops;
 };

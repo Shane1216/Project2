@@ -12,7 +12,8 @@ module.exports = function (app) {
   // Get all examples
   app.get("/api/stops", function (req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Sunrail_stop.findAll({}).then(function (data) {
+    db.Sunrail_stops.findAll({}).then(function (data) {
+      console.log(data);
       res.json(data);
     });
   });
