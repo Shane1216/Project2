@@ -12,16 +12,16 @@ module.exports = function (app) {
   // Get all examples
   app.get("/api/allstops", function (req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Sunrail_stops.findAll({}).then(function (data) {
-      res.json(data);
+    db.Sunrail_stops.findAll({}).then(function (allstops) {
+      res.json(allstops);
     });
   });
 
   // Get train by station
-  app.get("/api/stops/:id", function (req, res) {
-    db.Sunrail_stops.findAll({ where: { id: req.params.id } }).then(function (data) {
-      console.log(data);
-      res.json(data);
+  app.get("/api/stopid/:id", function (req, res) {
+    db.Sunrail_stops.findAll({ where: { id: req.params.id } }).then(function (stopid) {
+      console.log(stopid);
+      res.json(stopid);
     });
   });
 
