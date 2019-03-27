@@ -157,6 +157,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
+
   height: 5px;
   
   background-color: goldenrod;
@@ -225,6 +226,7 @@ hr {
   border: 2px solid goldenrod !important;
 }
 
+.login-container {
 padding: 30px;
 }
 
@@ -235,3 +237,9 @@ padding: 30px;
 .price-container .btn {
  float: right;
 }
+
+.loginlink {
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+ }
