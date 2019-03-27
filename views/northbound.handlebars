@@ -20,6 +20,8 @@
                             <li><a href="/northbound">Northbound</a></li>
                             <li><a href="/southbound">Southbound</a></li>
                             <li><a href="/map">Map</a></li>
+                            <li><a href="/login">Login</a></li>
+                      
                         </ul>
                     </nav>
                 </div>
@@ -51,11 +53,9 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>SunRail Schedule</h2>
-        <h3>Trip Planner</h3>
-          <p>Choose Schedule</p> 
-        </div>
+        <h1>SunRail Schedule</h1>
+        <h3>Trip Planner</h3><br>
+        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" onclick="myFunction('northbound')">Northbound Schedule</button>    </div>
     </div>
           
       <a href='/northbound'><button>Northbound</button></a>
@@ -67,7 +67,6 @@
 <div class="card">
   <div class="card-footer">
     <p>Built by</p>
-      <hr/>
     <div class="card-body">
     <h5 class="card-title">Fall 2019 UCF Coding Bootcamp Group LRRS</h5>
     <p class="card-text">Luna, Ronald, Reuben, Shane</p>

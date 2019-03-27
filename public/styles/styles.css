@@ -157,7 +157,6 @@ a {
 a::before {
   text-decoration: none;
   content: '';
-  display: block;
   height: 5px;
   
   background-color: goldenrod;
@@ -217,3 +216,22 @@ a:active {
     background-color: goldenrod !important;
 }
 
+#northbound, #southbound {
+  display: none;
+  margin-top: 20px;
+}
+
+hr {
+  border: 2px solid goldenrod !important;
+}
+
+padding: 30px;
+}
+
+.price-container {
+ text-align: center;
+}
+
+.price-container .btn {
+ float: right;
+}
