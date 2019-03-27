@@ -1,4 +1,3 @@
-/*from project template*/
 .list-group-item {
   line-height: 2.5;
 }
@@ -126,7 +125,6 @@ h4 {
 
 .card-footer {
     background-color: darkgrey !important;
-    
 }
 
 h5 {
@@ -157,7 +155,6 @@ a {
 a::before {
   text-decoration: none;
   content: '';
-  display: block;
   height: 5px;
   
   background-color: goldenrod;
@@ -215,4 +212,17 @@ a:active {
 {
     color: white !important;
     background-color: goldenrod !important;
+}
+/*------------ticket purchase----------------*/
+
+.login-container {
+  padding: 30px;
+}
+
+.price-container {
+  text-align: center;
+}
+
+.price-container .btn {
+  float: right;
 }
