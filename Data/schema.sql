@@ -20,8 +20,7 @@ CREATE TABLE stop_times (
   stop_sequence INT,
   pickup_type INT,
   drop_off_type INT,
-PRIMARY KEY(trip_id),
-FOREIGN KEY(stop_id)
+PRIMARY KEY(trip_id)
 );
 
 CREATE TABLE trips (
@@ -46,22 +45,22 @@ CREATE TABLE customer (
 PRIMARY KEY(cust_id)
 );
 
-CREATE TABLE payment (
-    pay_id INT NOT NULL AUTO_INCREMENT,
-    cust_id INT NOT NULL,
-    pay_type INT NOT NULL,
-    pay_amount FLOAT,
-    pay_date DATETIME DEFAULT NOW(),
-PRIMARY KEY(pay_id)
-);
+-- CREATE TABLE payment (
+--     pay_id INT NOT NULL AUTO_INCREMENT,
+--     cust_id INT NOT NULL,
+--     pay_type INT NOT NULL,
+--     pay_amount FLOAT,
+--     pay_date DATETIME DEFAULT NOW(),
+-- PRIMARY KEY(pay_id)
+-- );
 
-CREATE TABLE shopping_cart (
-    cart_id INT NOT NULL AUTO_INCREMENT,
-    item_id INT NOT NULL,
-    price FLOAT,
-    quantity INT,
-PRIMARY KEY cart_id
-):
+-- CREATE TABLE shopping_cart (
+--     cart_id INT NOT NULL AUTO_INCREMENT,
+--     item_id INT NOT NULL,
+--     price FLOAT,
+--     quantity INT,
+-- PRIMARY KEY cart_id
+-- ):
 
 -- THIS CREATES TABLES OUTSIDE OF THE SCOPE OF PROJECT AT THIS TIME!
 
