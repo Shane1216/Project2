@@ -1,24 +1,35 @@
-var db = require("../models");
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
 
-module.exports = function(app) {
+// Dependencies
+// =============================================================
+
+// Requiring our models
+let db = require("../models");
+
+module.exports = function (app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
-  });
-
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  app.get("/api/stops", function (req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Sunrail_stops.findAll({}).then(function (data) {
+      console.log(data);
+      res.json(data);
     });
   });
 };
+
+  // // Create a new example
+  // app.post("/api/rail_stop", function(req, res) {
+  //   db.rail_stop.create(req.body).then(function(dbRail_stop) {
+  //     res.json(dbExample);
+  //   });
+  // });
+
+  // Delete an example by id
+  //   app.delete("/api/rail_stop/:id", function(req, res) {
+  //     db.rail_stop.destroy({ where: { id: req.params.id } }).then(function(dbRail_stop) {
+  //       res.json(dbExample);
+  //     });
+// });
+
