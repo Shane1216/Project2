@@ -1,35 +1,28 @@
-<html>
-<head>
-<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Cantarell|Cinzel" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-<link rel="icon" href="https://mobile-atom.com/wp-content/uploads/2019/03/SunRail-Favicon.png" type="image/png" sizes="16x16">
-</head> 
-<body>
+
 <div class="content">
 <header>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1> My SunRail</h1>
+                    <h1>My SunRail</h1>
+                    
                     <nav class="nav">
                         <ul>
-                            <li><a href="/index">Home</a></li>
-                            <li><a href="/northbound">Northbound</a></li>
-                            <li><a href="/southbound">Southbound</a></li>
-                            <li><a href="/map">Map</a></li>
-                            <li><a href="/login">Login</a></li>
-                      
+                            <li><a href="/index"><i class="fas fa-Home"></i></a></li>
+                            <li><a href="/northbound">N <i class="fas fa-train"></i></a></li>
+                            <li><a href="/southbound">S <i class="fas fa-train"></i></a></li>
+                            <li><a href="/map"><i class="fas fa-map"></i></a></li>
+                            <li><a href="/login"><i class="fas fa-ticket-alt"></i></a></li>
+                            
                         </ul>
                     </nav>
+                    
                 </div>
             </div>
         </div>
-    </header>
+</header>
 
-    <div class="searchbar">
+<!--    <div class="searchbar">
         <div class="row">
             
             <div class="col-1"></div>
@@ -37,16 +30,17 @@
             <div class="col-10">
                 
                     <form class="form-inline">
-                   <!--hide for now
+                 HIDE FOR NOW
                     <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button> -->
+                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
                 </form> 
             </div>
             <div class="col-1"></div> 
         </div>
     </div>
-
-    
+-->
+<br>
+<br>    
 <div id="home">
   <div class="container">
     <div class="row">
@@ -54,13 +48,92 @@
         <p>&nbsp;</p>
         <h1>SunRail Schedule</h1>
         <h3>Trip Planner</h3>
-        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" onclick="myFunction('northbound')">Northbound Schedule</button>    </div>
+        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" onclick="myFunction('northbound')">Northbound Schedule</button> 
+        <hr/>
+        </div>
     </div>
-      
+          
+    </div>    
   </div>      
- </div>  
+<div id="northbound">
+    <div class="container">
+    <h2>Northbound</h2>
+          <br>
+        <h3>Select Station</h3> 
+        <form class="clearfix mb-4" action="POST">
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Departure Station
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">DeBary</a>
+    <a class="dropdown-item" href="#">Sandford</a>
+    <a class="dropdown-item" href="#">Lake Mary</a>
+    <a class="dropdown-item" href="#">Longwood</a>
+    <a class="dropdown-item" href="#">Altamonte Springs</a>
+    <a class="dropdown-item" href="#">Maitland</a>
+    <a class="dropdown-item" href="#">Winter Park/Amtrack</a>
+    <a class="dropdown-item" href="#">Advent Health</a>
+    <a class="dropdown-item" href="#">Lynx Central</a>
+    <a class="dropdown-item" href="#">Church Street</a>
+    <a class="dropdown-item" href="#">Orlando Health/Amtrack</a>
+    <a class="dropdown-item" href="#">Sand Lake Road</a>
+    <a class="dropdown-item" href="#">Meadow Woods</a>
+    <a class="dropdown-item" href="#">Tupperware</a>
+    <a class="dropdown-item" href="#">Kissimmee/Amtrak</a>
+    <a class="dropdown-item" href="#">Poinciana</a>
+  </div>
+</div>
+<br>          
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Arrival Station
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">DeBary</a>
+    <a class="dropdown-item" href="#">Sandford</a>
+    <a class="dropdown-item" href="#">Lake Mary</a>
+    <a class="dropdown-item" href="#">Longwood</a>
+    <a class="dropdown-item" href="#">Altamonte Springs</a>
+    <a class="dropdown-item" href="#">Maitland</a>
+    <a class="dropdown-item" href="#">Winter Park/Amtrack</a>
+    <a class="dropdown-item" href="#">Advent Health</a>
+    <a class="dropdown-item" href="#">Lynx Central</a>
+    <a class="dropdown-item" href="#">Church Street</a>
+    <a class="dropdown-item" href="#">Orlando Health/Amtrack</a>
+    <a class="dropdown-item" href="#">Sand Lake Road</a>
+    <a class="dropdown-item" href="#">Meadow Woods</a>
+    <a class="dropdown-item" href="#">Tupperware</a>
+    <a class="dropdown-item" href="#">Kissimmee/Amtrak</a>
+    <a class="dropdown-item" href="#">Poinciana</a>
+  </div>
+</div>
+<br>            
+          <h4>Departure Time</h4> 
+          <h4>Arrival Time</h4>
+          <h4>Estimated Travel Time</h4>
+    
+          <a href="/tickets"><button id="submit" class="btn float-right">Buy Tix Login</button></a>
+        </form>
+          
+<!--         <div id="notes">NEED BELOW TO PULL IN DATA FROM DATABASE???</div> <br><br> 
+          
+        <h3>SCHEDULE</h3>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button id="del-button" class="btn float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+-->    
+    </div>
+</div>
+<!--above northbound reveal div close -->
     
 <p>&nbsp;</p>
+    
 </div>  <!--content closing div-->
 
 
@@ -71,24 +144,5 @@
     <p class="card-text">Luna, Ronald, Reuben, Shane</p>
     <a href="https://github.com/Shane1216/Project2" id="submit" class="btn">Go to repository</a>
     </div>
-  </div>  
+  </div>   
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-</script>    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
-</script>
-<!--edited below-->
-
-<script>function myFunction(route) {
-  var x = document.getElementById(route);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>    
-</body>
-</html>
