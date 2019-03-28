@@ -9,9 +9,12 @@
           <p>
           <p>
             <strong>Stop Name</strong>: {{trains.stop_name}}</p>
+            {{#ifEquals trains.direction_id 'true'}}
           <p>
-            <strong>Direction:</strong> {{trains.direction_id}}</p>
+            <strong>Direction:</strong> Northbound</p>
+            {{/ifEquals}}
             <a href="/">← Back To Home</a>
+            
         </div>
       </div>
     </div>
