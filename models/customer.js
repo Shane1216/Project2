@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
         cust_address2: DataTypes.STRING,
         cust_city: DataTypes.STRING,
         cust_state: DataTypes.STRING,
-        cust_zip: DataTypes.STRING,
+        cust_zip: DataTypes.STRING
     }, {
             timestamps: false
         });
