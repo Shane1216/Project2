@@ -1,3 +1,5 @@
+
+/*from project template*/
 .list-group-item {
   line-height: 2.5;
 }
@@ -72,7 +74,9 @@ nav a::before {
   transition: all ease-in-out 250ms;
 }
 nav a:hover::before {
+
   width: 45px;;
+
   text-decoration: none;
 }
 
@@ -83,6 +87,7 @@ body {
     font-family: 'Cantarell', sans-serif;
     line-height: 34px;
     text-align: left;
+
 
 }
 
@@ -123,8 +128,10 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
+
 .card-footer {
     background-color: darkgrey !important;
+
 }
 
 h5 {
@@ -155,6 +162,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
+
   height: 5px;
   
   background-color: goldenrod;
@@ -164,7 +172,9 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
+<
   width: 175px;
+
   text-decoration: none;
 }
 
@@ -213,6 +223,7 @@ a:active {
     color: white !important;
     background-color: goldenrod !important;
 }
+
 /*------------ticket purchase----------------*/
 
 .login-container {
@@ -225,4 +236,5 @@ a:active {
 
 .price-container .btn {
   float: right;
+
 }
