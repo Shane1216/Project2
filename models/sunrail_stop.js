@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
         zone_id: DataTypes.INTEGER
     },
         {
-            timestamps: false
+            timestamps: false,
+            underscored: true
         });
     return Sunrail_stops;
 };
