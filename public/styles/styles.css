@@ -73,17 +73,23 @@ nav a::before {
   transition: all ease-in-out 250ms;
 }
 nav a:hover::before {
-  width: 45px;;
+  width: 105px;;
   text-decoration: none;
 }
 
 /*from Reuben portfolio*/
+
+html, body {
+  height: 100%;
+}
 
 body {
     font-family: 'Cinzel', serif;
     font-family: 'Cantarell', sans-serif;
     line-height: 34px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -124,9 +130,13 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
 .card-footer {
     background-color: darkgrey !important;
-    
+    flex-shrink: 0;
 }
 
 h5 {
@@ -157,7 +167,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
-
+  
   height: 5px;
   
   background-color: goldenrod;
@@ -167,7 +177,7 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
-  width: 175px;
+  width: 105px !important;
   text-decoration: none;
 }
 
@@ -218,17 +228,14 @@ a:active {
 }
 
 #northbound, #southbound {
-  display: none;
-  margin-top: 20px;
+    display: none;
+    margin-top: 20px;
 }
 
 hr {
-  border: 2px solid goldenrod !important;
+    border: 2px solid goldenrod !important;
 }
 
-.login-container {
-padding: 30px;
-}
 
 .price-container {
  text-align: center;
@@ -237,9 +244,3 @@ padding: 30px;
 .price-container .btn {
  float: right;
 }
-
-.loginlink {
-  align-content: center;
-  text-align: center;
-  cursor: pointer;
- }
