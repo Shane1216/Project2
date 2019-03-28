@@ -1,3 +1,4 @@
+/*from project template*/
 .list-group-item {
   line-height: 2.5;
 }
@@ -72,7 +73,9 @@ nav a::before {
   transition: all ease-in-out 250ms;
 }
 nav a:hover::before {
+
   width: 45px;;
+
   text-decoration: none;
 }
 
@@ -123,8 +126,10 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
+
 .card-footer {
     background-color: darkgrey !important;
+
 }
 
 h5 {
@@ -164,7 +169,9 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
+<
   width: 175px;
+
   text-decoration: none;
 }
 
@@ -225,4 +232,5 @@ a:active {
 
 .price-container .btn {
   float: right;
+
 }
