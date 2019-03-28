@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Cantarell|Cinzel" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link rel="icon" href="https://mobile-atom.com/wp-content/uploads/2019/03/SunRail-Favicon.png" type="image/png" sizes="16x16">
+</head> 
+<body>
+<div class="content">
+<header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1> My SunRail</h1>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="/index">Home</a></li>
+                            <li><a href="/northbound">Northbound</a></li>
+                            <li><a href="/southbound">Southbound</a></li>
+                            <li><a href="/map">Map</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="searchbar">
+        <div class="row">
+            
+            <div class="col-1"></div>
+              
+            <div class="col-10">
+                
+                    <form class="form-inline">
+                   <!--hide for now
+                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button> -->
+                </form> 
+            </div>
+            <div class="col-1"></div> 
+        </div>
+    </div>
+
+<br>
+
+    
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <p>&nbsp;</p>
+        <h1>SunRail Schedule</h1>
+        <h3>Trip Planner</h3>
+        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" onclick="myFunction('southbound')">Southbound Schedule</button>   </div>
+    </div>
+  </div>      
+    
+    
+<p>&nbsp;</p>
+</div>  <!--content closing div-->
+</div>
+
+  <div class="card-footer">
+    <p>Built by</p>
+    <div class="card-body">
+    <h5 class="card-title">Fall 2019 UCF Coding Bootcamp Group LRRS</h5>
+    <p class="card-text">Luna, Ronald, Reuben, Shane</p>
+    <a href="https://github.com/Shane1216/Project2" id="submit" class="btn">Go to repository</a>
+    </div>
+  </div> 
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+</script>    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
+</script>
+<!--edited below-->
+
+<script>function myFunction(route) {
+  var x = document.getElementById(route);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>    
+</body>
+</html>
