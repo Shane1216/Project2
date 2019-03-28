@@ -11,15 +11,16 @@ let db = require("../models");
 module.exports = function (app) {
   // Get all examples
   app.get("/api/allstops", function (req, res) {
-    // findAll returns all entries for a table when used with no options
+    // findAll returns all station table entries when used with no options
     db.Sunrail_stops.findAll({}).then(function (allstops) {
+      console.log(allstops);
       res.json(allstops);
     });
   });
 
-  // Get train by station
+  // Get train by station id
   app.get("/api/stopid/:id", function (req, res) {
-    db.Sunrail_stops.findAll({ where: { id: req.params.id } }).then(function (stopid) {
+    db.Sunrail_stops.findOne({ where: { id: req.params.id } }).then(function (stopid) {
       console.log(stopid);
       res.json(stopid);
     });
