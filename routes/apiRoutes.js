@@ -26,17 +26,76 @@ module.exports = function (app) {
     });
   });
 
-  // // Create a new train
-  // app.post("/api/rail_stops/:id", function (req, res) {
+// Get train schedule by station origin 
+// app.get("/api/rail_stops/:id", function (req, res) {
   //   db.Sunrail_stop.create(req.body).then(function (data) {
-  //     res.json(data);
+    //     res.json(data);
     // });
-  // });
-
-  // // Delete a train by trip id
-  // app.delete("/api/rail_stops/:id", function (req, res) {
+    // });
+    
+    // Get train schedule by station destination
+  // app.get("/api/rail_stops/:id", function (req, res) {
   //   db.rail_stop.destroy({ where: { id: req.params.id } }).then(function (data) {
   //     res.json(data);
   //   });
   // });
 };
+
+//import the models (as noted above use a db object)
+//import express and instantiate your app object
+
+// app.get('/api/', (req, res) => {  
+//   db.users.findAll({
+//     include: [
+//       {
+//         model: db.posts,
+//         include: [
+//           {
+//             model: db.comments
+//           }
+//         ]
+//       }
+//     ]
+//   }).then(users => {
+//     const resObj = users.map(user => {
+
+//       //tidy up the user data
+//       return Object.assign(
+//         {},
+//         {
+//           user_id: user.id,
+//           username: user.username,
+//           role: user.role,
+//           posts: user.posts.map(post => {
+
+//             //tidy up the post data
+//             return Object.assign(
+//               {},
+//               {
+//                 post_id: post.id,
+//                 user_id: post.user_id,
+//                 content: post.content,
+//                 comments: post.comments.map(comment => {
+
+//                   //tidy up the comment data
+//                   return Object.assign(
+//                     {},
+//                     {
+//                       comment_id: comment.id,
+//                       post_id: comment.post_id,
+//                       commenter: comment.commenter_username,
+//                       commenter_email: comment.commenter_email,
+//                       content: comment.content
+//                     }
+//                   )
+//                 })
+//               }
+//               )
+//           })
+//         }
+//       )
+//     });
+//     res.json(resObj)
+//   });
+// });
+
