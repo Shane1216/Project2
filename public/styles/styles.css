@@ -1,5 +1,3 @@
-
-
 /*from Luna*/
 
 header h1 {
@@ -71,13 +69,7 @@ nav a::before {
 
 }
 nav a:hover::before {
-<<<<<<< HEAD
   width: 50px !important;
-=======
-
-  width: 45px;;
-
->>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
   text-decoration: none;
 }
 
@@ -92,6 +84,132 @@ nav a:hover::before {
 }
 
 /*media screen from Reuben*/
+
+@media screen and (max-width: 1200px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+img {
+    width: 1000px !important;
+    }
+}
+
+
+@media screen and (max-width: 960px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+img {
+    width: 700px !important;
+    }
+}
+
 
 @media screen and (max-width: 768px){
 
@@ -150,7 +268,9 @@ nav a:hover::before {
   width: 50px;
   text-decoration: none;
     }   
-
+img {
+    width: 500px !important;
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -210,7 +330,10 @@ nav a:hover::before {
   width: 50px;
   text-decoration: none;
     }   
-
+.image {
+    display: none;
+    }
+    
 }
 
 
@@ -270,7 +393,11 @@ nav a::before {
 nav a:hover::before {
   width: 50px;
   text-decoration: none;
-    }   
+    } 
+    
+.image {
+    display: none;
+    }
 
 }
 
@@ -330,7 +457,11 @@ nav a::before {
 nav a:hover::before {
   width: 50px;
   text-decoration: none;
-    }   
+    }
+    
+.image {
+    display: none;
+    }
 
 }
 
@@ -391,54 +522,25 @@ nav a:hover::before {
   width: 40px;
   text-decoration: none;
     }   
-
-}
-
-/*
-.nav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .nav a:not(:first-child) {display: none;}
-  .nav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    
+.image {
+    display: none;
     }
 }
 
-.nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-*/
-
-<<<<<<< HEAD
 html, body {
   height: 100%;
 }
 
 /*from Reuben portfolio*/
 
-=======
->>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
 body {
     font-family: 'Cinzel', serif;
     font-family: 'Cantarell', sans-serif;
     line-height: 34px;
     text-align: left;
-
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -480,10 +582,13 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
+.content {
+  flex: 1 0 auto;
+}
 
 .card-footer {
     background-color: darkgrey !important;
-
+    flex-shrink: 0;
 }
 
 h5 {
@@ -498,11 +603,6 @@ h5 {
     
 }
 
-.searchbar {
-    background-color: darkgrey;
-   
-}
-
 /*from Luna*/
 
 a {
@@ -514,7 +614,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
-
+  
   height: 5px;
   
   background-color: goldenrod;
@@ -524,9 +624,7 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
-<
-  width: 175px;
-
+  width: 105px !important;
   text-decoration: none;
 }
 
@@ -578,25 +676,31 @@ a:active {
     background-color: goldenrod !important;
 }
 
-/*------------ticket purchase----------------*/
-
-.login-container {
-  padding: 30px;
+#northbound, #southbound {
+    display: none;
+    margin-top: 20px;
 }
+
+hr {
+    border: 2px solid goldenrod !important;
+}
+
+/*from Luna*/
+
 .price-container {
-  text-align: center;
+    text-align: center;
 }
 
 .price-container .btn {
-  float: right;
+    float: right;
 }
 
 .jumbotron {
-  background-color: darkgray !important;
+    background-color: darkgray !important;
 }
 
 .map {
-  margin: auto;
-  width: 50%;
-  border: 3px solid goldenrod;
+    margin: auto;
+    width: 50%;
+    border: 3px solid goldenrod;
 }
