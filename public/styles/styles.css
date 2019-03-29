@@ -1,9 +1,26 @@
+<<<<<<< HEAD
 /*from Luna*/
 
+=======
+>>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 header h1 {
   color: goldenrod !important;
   position: relative;
   font-size: 30px !important;
+  margin-top: 15px;
+  border-top: 3px solid darkgrey;
+  border-bottom: 3px solid darkgrey;
+  
+}
+/*from project template*/
+.list-group-item {
+  line-height: 2.5;
+}
+
+header h1 {
+  color: white;
+  position: relative;
+  font-size: 50px;
   margin-top: 15px;
   border-top: 3px solid darkgrey;
   border-bottom: 3px solid darkgrey;
@@ -31,6 +48,7 @@ header h1 {
 nav  {
   text-align: right;
   padding-right: 0px;
+  padding-right: 15px;
   padding-top: 20px;
   float: right;
 }
@@ -50,6 +68,15 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 24px;
+  margin-left: 70px;
+  padding-top: 23px;
+  
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 nav a:hover {
   color: darkgrey;
@@ -61,15 +88,19 @@ nav a::before {
   display: block;
   height: 5px;
   margin-top: 25px;
+  margin-top: 37px;
   background-color: goldenrod;
   position: absolute;
   top: 0;
   width: 0%;
   transition: all ease-in-out 250ms;
-
 }
 nav a:hover::before {
   width: 50px !important;
+<<<<<<< HEAD
+=======
+  width: 45px;;
+>>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
   text-decoration: none;
 }
 
@@ -528,8 +559,26 @@ nav a:hover::before {
     }
 }
 
+<<<<<<< HEAD
+=======
+.nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+*/
+
+>>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 html, body {
   height: 100%;
+}
+nav a:hover::before {
+
+  width: 45px;;
+
+  text-decoration: none;
+
 }
 
 /*from Reuben portfolio*/
@@ -556,26 +605,43 @@ p {
 /*new CSS*/
 
 h1 {
+
     padding-top: 20px;
     padding-bottom: 20px;
     color: darkgrey!important;
     font-size: 24px !important;
+
+    padding-bottom: 20px;
+    color: darkgrey!important;
+    font-size: 36px !important;
+
     font-family: 'Cinzel', serif !important;
 }
 
 h2 {
     padding-bottom: 20px;
     font-size: 22px !important;
+
+    font-size: 30px !important;
+
     color: darkgrey !important;
     font-family: 'Cinzel', serif !important; 
 }
 
 h3 {
+
     font-size: 20px !important;
     color: darkgrey !important;
     font-family: 'Cinzel', serif !important;
 }
 
+
+    font-size: 24px !important;
+    color: darkgrey !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+/*changed below*/
 h4 {
     font-size: 18px !important;
     color: darkgrey!important;
@@ -604,6 +670,8 @@ h5 {
 }
 
 /*from Luna*/
+/*changed above*/
+
 
 a {
     transition: 0.8s ease;
@@ -685,8 +753,11 @@ hr {
     border: 2px solid goldenrod !important;
 }
 
+<<<<<<< HEAD
 /*from Luna*/
 
+=======
+>>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 .price-container {
     text-align: center;
 }
