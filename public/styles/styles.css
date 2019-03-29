@@ -71,7 +71,13 @@ nav a::before {
 
 }
 nav a:hover::before {
+<<<<<<< HEAD
   width: 50px !important;
+=======
+
+  width: 45px;;
+
+>>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
   text-decoration: none;
 }
 
@@ -418,19 +424,21 @@ nav a:hover::before {
 }
 */
 
+<<<<<<< HEAD
 html, body {
   height: 100%;
 }
 
 /*from Reuben portfolio*/
 
+=======
+>>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
 body {
     font-family: 'Cinzel', serif;
     font-family: 'Cantarell', sans-serif;
     line-height: 34px;
     text-align: left;
-    display: flex;
-    flex-direction: column;
+
 
 }
 
@@ -472,13 +480,10 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
-.content {
-  flex: 1 0 auto;
-}
 
 .card-footer {
     background-color: darkgrey !important;
-    flex-shrink: 0;
+
 }
 
 h5 {
@@ -509,7 +514,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
-  
+
   height: 5px;
   
   background-color: goldenrod;
@@ -519,7 +524,9 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
-  width: 105px !important;
+<
+  width: 175px;
+
   text-decoration: none;
 }
 
@@ -571,21 +578,25 @@ a:active {
     background-color: goldenrod !important;
 }
 
-#northbound, #southbound {
-    display: none;
-    margin-top: 20px;
+/*------------ticket purchase----------------*/
+
+.login-container {
+  padding: 30px;
 }
-
-hr {
-    border: 2px solid goldenrod !important;
-}
-
-/*from Luna*/
-
 .price-container {
- text-align: center;
+  text-align: center;
 }
 
 .price-container .btn {
- float: right;
+  float: right;
+}
+
+.jumbotron {
+  background-color: darkgray !important;
+}
+
+.map {
+  margin: auto;
+  width: 50%;
+  border: 3px solid goldenrod;
 }
