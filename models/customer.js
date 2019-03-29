@@ -1,6 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     let Customer = sequelize.define("Customer", {
         cust_id: DataTypes.STRING,
+        cust_email: DataTypes.STRING,
         cust_name: DataTypes.STRING,
         cust_address1: DataTypes.STRING,
         cust_address2: DataTypes.STRING,
