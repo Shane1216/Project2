@@ -1,200 +1,96 @@
-<<<<<<< HEAD
 <div class="content">
 <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>My SunRail</h1>
-                    
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="/index"><i class="fas fa-Home"></i></a></li>
-                            <li><a href="/northbound">N <i class="fas fa-train"></i></a></li>
-                            <li><a href="/southbound">S <i class="fas fa-train"></i></a></li>
-                            <li><a href="/map"><i class="fas fa-map"></i></a></li>
-                            <li><a href="/login"><i class="fas fa-ticket-alt"></i></a></li>
-                            
-                        </ul>
-                    </nav>
-                    
-                </div>
-            </div>
-        </div>
-</header>
-<!--
-    <div class="searchbar">
-        <div class="row">
-            
-            <div class="col-1"></div>
-              
-            <div class="col-10">
-                
-                    <form class="form-inline">
-                   HIDE FOR NOW
-                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button> 
-                </form> 
-            </div>
-            <div class="col-1"></div> 
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1> My SunRail</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/northbound">Northbound</a></li>
+            <li><a href="/southbound">Southbound</a></li>
+            <li><a href="/map">Map</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
--->
+  </div>
+</header>
 <br>
 <br>
     
-    <div class="login-container">
+<div class="login-container">
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h5 class="text-center">Login in to receive your ticket!</h5>
+    </div>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1> My SunRail</h1>
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="/index">Home</a></li>
-                            <li><a href="/northbound">Northbound</a></li>
-                            <li><a href="/southbound">Southbound</a></li>
-                            <li><a href="/map">Map</a></li>
-                            <li><a href="/login">Log In</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <div class="row">
+        <!-- Sign-Up Card-->
+        <div class="col-md-6">
+            <div class="card card-default">
+            <div class="card-header">
+            New Rider Register
             </div>
-        </div>
-    </header>
-
-    <div class="searchbar">
-        <div class="row">
-            <div class="col-md-3 offset-9">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+            <div class="card-body">
+            <!-- Sign-up Form (note the various input "types")-->
+                <form role="form">
+                    <div class="form-group row">
+                        <label for="name-input">Name:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="password-input">Password:</label>
+                        <input class="form-control" id="password-input" type="password">
+                    </div>
+                    <button class="btn btn-warning my-2 my-sm-0" id="add-user" type="submit">Submit</button>
                 </form>
             </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-default">
+                <div class="card-header">
+                Returning Rider Login
+                </div>
+                <div class="card-body">
+                <!-- Sign-up Form (note the various input "types")-->
+                    <form role="form">
+                        <div class="form-group row">
+                            <label for="name-input">Name:</label>
+                            <input class="form-control" id="name-input" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="password-input">Password:</label>
+                            <input class="form-control" id="password-input" type="password">
+                        </div>
+                        <button class="btn btn-warning my-2 my-sm-0" id="add-user" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
-
-
-
-
-    <div class="login-container">
-
-        <br>
-
->>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
-        <!-- Jumbotron -->
-        <div class="jumbotron">
-            <h1 class="text-center">Login in to recieve your ticket.</h1>
-        </div>
-
-        <div class="row">
-
-            <!-- Sign-Up Card-->
-            <div class="col-md-6">
-                <div class="card card-default">
-                    <div class="card-header">
-                        New Rider Register
-                    </div>
-                    <div class="card-body">
-
-                        <!-- Sign-up Form (note the various input "types")-->
-
-                        <form role="form">
-                            <div class="form-group row">
-                                <label for="name-input">Name:</label>
-                                <input class="form-control" id="name-input" type="text">
-                            </div>
-                            <div class="form-group row">
-                                <label for="password-input">Password:</label>
-                                <input class="form-control" id="password-input" type="password">
-                            </div>
-                            <button class="btn btn-warning my-2 my-sm-0" id="add-user" type="submit">Submit</button>
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-6">
-                <div class="card card-default">
-                    <div class="card-header">
-                        Returning Rider Login
-                    </div>
-                    <div class="card-body">
-
-                        <!-- Sign-up Form (note the various input "types")-->
-
-                        <form role="form">
-                            <div class="form-group row">
-                                <label for="name-input">Name:</label>
-                                <input class="form-control" id="name-input" type="text">
-                            </div>
-                            <div class="form-group row">
-                                <label for="password-input">Password:</label>
-                                <input class="form-control" id="password-input" type="password">
-                            </div>
-                            <button class="btn btn-warning my-2 my-sm-0" id="add-user" type="submit">Submit</button>
-                        </form>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <br><br><br>
-<<<<<<< HEAD
-  </div>
+<br>
+<br>
+<br>
 </div>
- <div class="card-footer">
+</div> <!--Content Div Closing-->
+ 
+<div class="card-footer">
     <p>Built by</p>
     <div class="card-body">
-    <h5 class="card-title">Fall 2019 UCF Coding Bootcamp Group LRRS</h5>
-    <p class="card-text">Luna, Ronald, Reuben, Shane</p>
-    <a href="https://github.com/Shane1216/Project2" id="submit" class="btn">Go to repository</a>
+        <h5 class="card-title">Fall 2019 UCF Coding Bootcamp Group LRRS</h5>
+        <p class="card-text">Luna, Ronald, Reuben, Shane</p>
+        <a href="https://github.com/Shane1216/Project2" id="submit" class="btn">Go to repository</a>
     </div>
-  </div>
-=======
-
-        <div class="card">
-            <div class="card-footer">
-                <p>Built by</p>
-                <div class="card-body">
-                    <h5 class="card-title">Fall 2019 UCF Coding Bootcamp Group LRRS</h5>
-                    <p class="card-text">Luna, Ronald, Reuben, Shane</p>
-                    <a href="https://github.com/Shane1216/Project2" id="submit" class="btn">Go to repository</a>
-                </div>
-            </div>
-        </div>
-        
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-        </script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
-            </script>
-        <script src="/js/index.js"></script>
-
-</body>
-
-</html>
->>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
+</div>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+</script>    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js">
+</script> 
