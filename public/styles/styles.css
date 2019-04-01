@@ -1,8 +1,17 @@
+/*from Luna*/
+header h1 {
+  color: goldenrod !important;
+  position: relative;
+  font-size: 30px !important;
+  margin-top: 15px;
+  border-top: 3px solid darkgrey;
+  border-bottom: 3px solid darkgrey;
+  
+}
+/*from project template*/
 .list-group-item {
   line-height: 2.5;
 }
-
-/*from Luna*/
 
 header h1 {
   color: white;
@@ -34,6 +43,7 @@ header h1 {
 }
 nav  {
   text-align: right;
+  padding-right: 0px;
   padding-right: 15px;
   padding-top: 20px;
   float: right;
@@ -45,6 +55,15 @@ nav ul {
 }
 nav li {
   display: inline-block;
+  margin-left: 50px;
+  padding-top: 10px;
+  
+}
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
   margin-left: 70px;
   padding-top: 23px;
   
@@ -64,6 +83,7 @@ nav a::before {
   content: '';
   display: block;
   height: 5px;
+  margin-top: 25px;
   margin-top: 37px;
   background-color: goldenrod;
   position: absolute;
@@ -72,8 +92,472 @@ nav a::before {
   transition: all ease-in-out 250ms;
 }
 nav a:hover::before {
-  width: 45px;;
+  width: 50px !important;
   text-decoration: none;
+}
+
+.card-body {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+}
+
+.col-md-6 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+/*media screen from Reuben*/
+
+@media screen and (max-width: 1200px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+img {
+    width: 1000px !important;
+    }
+}
+
+
+@media screen and (max-width: 960px){
+header ul {
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+img {
+    width: 700px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+img {
+    width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+header ul {
+
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 25px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }   
+.image {
+    display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    } 
+    
+.image {
+    display: none;
+    }
+
+}
+
+@media screen and (max-width: 537px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 40px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 107px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 50px;
+  text-decoration: none;
+    }
+    
+.image {
+    display: none;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+header ul {
+  
+    }
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+    }
+header h1 {
+  float: left;
+  padding: 10px 0;
+    }
+nav  {
+  float: left;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-left: 10px !important;
+    }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    }
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 10px;
+  
+    }
+nav a {
+  color: goldenrod !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+    }
+nav a:hover {
+  color: darkgrey;
+  text-decoration: none;
+    }
+nav a::before {
+  text-decoration: none;
+  content: '';
+  display: block;
+  height: 5px;
+  margin-top: 107px;
+  background-color: goldenrod;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+    }
+nav a:hover::before {
+  width: 40px;
+  text-decoration: none;
+    }   
+    
+.image {
+    display: none;
+    }
+}
+
+html, body {
+  height: 100%;
+}
+nav a:hover::before {
+
+  width: 45px;;
+
+  text-decoration: none;
+
 }
 
 /*from Reuben portfolio*/
@@ -83,6 +567,8 @@ body {
     font-family: 'Cantarell', sans-serif;
     line-height: 34px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -98,24 +584,36 @@ p {
 /*new CSS*/
 
 h1 {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: darkgrey!important;
+    font-size: 24px !important;
+
     padding-bottom: 20px;
     color: darkgrey!important;
     font-size: 36px !important;
+
     font-family: 'Cinzel', serif !important;
 }
 
 h2 {
     padding-bottom: 20px;
+    font-size: 22px !important;
+
     font-size: 30px !important;
+
     color: darkgrey !important;
     font-family: 'Cinzel', serif !important; 
 }
 
 h3 {
-    font-size: 24px !important;
+
+    font-size: 20px !important;
     color: darkgrey !important;
     font-family: 'Cinzel', serif !important;
 }
+
 /*changed below*/
 h4 {
     font-size: 18px !important;
@@ -123,8 +621,13 @@ h4 {
     font-family: 'Cinzel', serif !important;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
 .card-footer {
     background-color: darkgrey !important;
+    flex-shrink: 0;
 }
 
 h5 {
@@ -139,12 +642,9 @@ h5 {
     
 }
 
-.searchbar {
-    background-color: darkgrey;
-   
-}
-
+/*from Luna*/
 /*changed above*/
+
 
 a {
     transition: 0.8s ease;
@@ -155,6 +655,7 @@ a {
 a::before {
   text-decoration: none;
   content: '';
+  
   height: 5px;
   
   background-color: goldenrod;
@@ -164,7 +665,7 @@ a::before {
   transition: all ease-in-out 250ms;
 }
 a:hover::before {
-  width: 175px;
+  width: 105px !important;
   text-decoration: none;
 }
 
@@ -182,6 +683,8 @@ a:active {
     color: darkgey !important;
     text-decoration: none !important;
 }
+
+/*from Reuben*/
 
 #submit {
     float: right;
@@ -213,16 +716,32 @@ a:active {
     color: white !important;
     background-color: goldenrod !important;
 }
-/*------------ticket purchase----------------*/
 
-.login-container {
-  padding: 30px;
+#northbound, #southbound {
+    display: none;
+    margin-top: 20px;
 }
 
+hr {
+    border: 2px solid goldenrod !important;
+}
+
+/*from Luna*/
+
 .price-container {
-  text-align: center;
+    text-align: center;
 }
 
 .price-container .btn {
-  float: right;
+    float: right;
+}
+
+.jumbotron {
+    background-color: darkgray !important;
+}
+
+.map {
+    margin: auto;
+    width: 50%;
+    border: 3px solid goldenrod;
 }

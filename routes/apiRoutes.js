@@ -26,17 +26,46 @@ module.exports = function (app) {
     });
   });
 
-  // // Create a new train
-  // app.post("/api/rail_stops/:id", function (req, res) {
-  //   db.Sunrail_stop.create(req.body).then(function (data) {
-  //     res.json(data);
-    // });
-  // });
+  // Get train schedule by station origin 
+  app.get("/api/direction_id/:id", function (req, res) {
+    db.Sunrail_stop.findAll({where: {id: req.params.id} }).then(function (data) {
+      res.json(data);
+    });
+  });
 
-  // // Delete a train by trip id
-  // app.delete("/api/rail_stops/:id", function (req, res) {
-  //   db.rail_stop.destroy({ where: { id: req.params.id } }).then(function (data) {
-  //     res.json(data);
-  //   });
-  // });
+//  Get train schedule by station destination
+  app.get("/api", function (req, res) {
+    db.rail_stop.findAll({ where: { id: req.params.id } }).then(function (data) {
+      res.json(data);
+    });
+  });
+
+
+//import the models (as noted above use a db object)
+//import express and instantiate your app object
+
+ // Get all chirps
+  app.get("/api/all", function(req, res) {
+    var dbQuery = "SELECT * FROM passengers";
+
+    connection.query(dbQuery, function(err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+  });
+
+  // Add a chirp
+  app.post("/api/new", function(req, res) {
+    console.log("Passenger Data:");
+    console.log(req.body);
+
+    var dbQuery = "INSERT INTO passengers (p_password, p_name, p_email, p_address2, p_address1, p_state, p_city, p_zip) VALUES (?,?,?,?,?,?,?,?)";
+  
+    connection.query(dbQuery, [req.body.pass_name, req.body.body, req.body.created_at], function(err, result) {
+      if (err) throw err;
+      console.log("Passenger Successfully Saved!");
+      res.end();
+    });
+  });
 };
+
