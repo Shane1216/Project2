@@ -6,7 +6,12 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     res.render("index", {
     });
-  });;
+  });
+
+  app.get("/index", function (req, res) {
+    res.render("index", {
+    });
+  });
 
   // Load Northbound page
   app.get("/northbound", function (req, res) {
@@ -38,10 +43,7 @@ module.exports = function (app) {
   });
 
   app.get("/login", function (req, res) {
-    db.Sunrail_stops.findAll({}).then(function (dbSunrail) {
       res.render("login", {
-        trains: dbSunrail
-      });
     });
   });
 
