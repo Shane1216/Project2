@@ -6,7 +6,7 @@ var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveTrains: function(example) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
@@ -16,7 +16,7 @@ var API = {
       data: JSON.stringify(example)
     });
   },
-  getExamples: function() {
+  getTrains: function() {
     return $.ajax({
       url: "api/stops",
       type: "GET"

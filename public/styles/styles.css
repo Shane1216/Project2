@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*from Luna*/
-
-=======
->>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 header h1 {
   color: goldenrod !important;
   position: relative;
@@ -97,10 +93,6 @@ nav a::before {
 }
 nav a:hover::before {
   width: 50px !important;
-<<<<<<< HEAD
-=======
-  width: 45px;;
->>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
   text-decoration: none;
 }
 
@@ -180,9 +172,7 @@ img {
 
 
 @media screen and (max-width: 960px){
-
 header ul {
-  
     }
 header::after {
   content: '';
@@ -307,7 +297,7 @@ img {
 @media screen and (max-width: 640px){
 
 header ul {
-  
+
     }
 header::after {
   content: '';
@@ -559,17 +549,6 @@ nav a:hover::before {
     }
 }
 
-<<<<<<< HEAD
-=======
-.nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-*/
-
->>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 html, body {
   height: 100%;
 }
@@ -631,12 +610,6 @@ h2 {
 h3 {
 
     font-size: 20px !important;
-    color: darkgrey !important;
-    font-family: 'Cinzel', serif !important;
-}
-
-
-    font-size: 24px !important;
     color: darkgrey !important;
     font-family: 'Cinzel', serif !important;
 }
@@ -753,11 +726,8 @@ hr {
     border: 2px solid goldenrod !important;
 }
 
-<<<<<<< HEAD
 /*from Luna*/
 
-=======
->>>>>>> a45edac91490166cfa06add4693eba9de281ceaf
 .price-container {
     text-align: center;
 }

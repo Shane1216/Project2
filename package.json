@@ -12,12 +12,14 @@
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.6.5",
     "npm": "^6.9.0",
-    "sequelize": "^5.2.1",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.2.8",
     "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
