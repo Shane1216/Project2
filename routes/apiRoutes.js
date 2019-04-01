@@ -44,7 +44,7 @@ module.exports = function (app) {
 //import the models (as noted above use a db object)
 //import express and instantiate your app object
 
- // Get all chirps
+ // Get all passengers
   app.get("/api/all", function(req, res) {
     var dbQuery = "SELECT * FROM passengers";
 
@@ -54,7 +54,7 @@ module.exports = function (app) {
     });
   });
 
-  // Add a chirp
+  // Add a Passenger
   app.post("/api/new", function(req, res) {
     console.log("Passenger Data:");
     console.log(req.body);
