@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
         trip_id: DataTypes.INTEGER,
         stop_id: DataTypes.INTEGER,
         stop_name: DataTypes.STRING,
-        direction_id: DataTypes.BOOLEAN,
+        direction_id: DataTypes.STRING,
         zone_id: DataTypes.INTEGER
     }, {
         timestamps: false

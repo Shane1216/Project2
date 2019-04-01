@@ -8,7 +8,7 @@
                     
                     <nav class="nav">
                         <ul>
-                            <li><a href="/"><i class="fas fa-Home"></i></a></li>
+                            <li><a href="/">Home<i class="fas fa-Home"></i></a></li>
                             <li><a href="/northbound">N <i class="fas fa-train"></i></a></li>
                             <li><a href="/southbound">S <i class="fas fa-train"></i></a></li>
                             <li><a href="/map"><i class="fas fa-map"></i></a></li>
@@ -62,10 +62,10 @@
         <h3>Select Station</h3> 
         <form class="clearfix mb-4" action="POST">
 <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="departureButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Departure Station
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="depD">
     <a class="dropdown-item" href="#">DeBary</a>
     <a class="dropdown-item" href="#">Sandford</a>
     <a class="dropdown-item" href="#">Lake Mary</a>
@@ -86,7 +86,7 @@
 </div>
 <br>          
 <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="arrivalButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Arrival Station
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -109,12 +109,21 @@
   </div>
 </div>
 <br>            
-          <h4>Departure Time</h4> 
-          <h4>Arrival Time</h4>
-          <h4>Estimated Travel Time</h4>
+          <h4 id="depTime">Departure Time</h4> 
+          <h4 id="arrTime">Arrival Time</h4>
+          <h4 id="estTime">Estimated Travel Time</h4>
     
           <a href="/tickets"><button id="submit" class="btn float-right">Buy Tix Login</button></a>
         </form>
+
+        <script>
+          $('#depD').click(function(){
+            let stops = $('#depD').text();
+          console.log(stops);
+          $('#depTime').append(stops);
+          })
+          
+        </script>
           
 <!--         <div id="notes">NEED BELOW TO PULL IN DATA FROM DATABASE???</div> <br><br> 
           
@@ -128,6 +137,522 @@
           {{/each}}
         </ul>
 -->    
+      <h3>Northbound Morning Departure Times</h3>
+      <br>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Train Number</th>
+              <th>P302</th>
+              <th>P304</th>
+              <th>P306</th>
+              <th>P308</th>
+              <th>P310</th>
+              <th>P312</th>
+              <th>P314</th>
+            </tr>
+            <tr>
+              <td>Poinciana</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Kissimmee / Amtrak</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Tupperware</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Meadow Woods</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Sand Lake Road</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Orlando Health / Amtrak</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Church Street</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Lynx Central</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>AdventHealth</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Winter Park / Amtrak</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Maitland</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Altamonte Springs</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Longwood</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Lake Mary</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>Sanford</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+            <tr>
+              <td>DeBary</td>
+              <td>5:45 AM</td>
+              <td>6:15 AM</td>
+              <td>6:45 AM</td>
+              <td>7:15 AM</td>
+              <td>7:45 AM</td>
+              <td>8:15 AM</td>
+              <td>8:45 AM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <h3>Northbound Mid-Day Departure Times</h3>
+      <br>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Train Number</th>
+              <th>P316</th>
+              <th>P318</th>
+              <th>P320</th>
+              <th>P322</th>
+              <th>P324</th>
+            </tr>
+            <tr>
+              <td>Poinciana</td>
+              <td>10:45 AM</td>
+              <td>12:15 PM</td>
+              <td>1:15 PM</td>
+              <td>2:15 PM</td>
+              <td>3:15 PM</td>
+            </tr>
+            <tr>
+              <td>Kissimmee / Amtrak</td>
+              <td>10:53 AM</td>
+              <td>12:23 PM</td>
+              <td>1:23 PM</td>
+              <td>2:23 PM</td>
+              <td>3:23 PM</td>
+            </tr>
+            <tr>
+              <td>Tupperware</td>
+              <td>10:59 AM</td>
+              <td>12:29 PM</td>
+              <td>1:29 PM</td>
+              <td>2:29 PM</td>
+              <td>3:29 PM</td>
+            </tr>
+            <tr>
+              <td>Meadow Woods</td>
+              <td>11:04 AM</td>
+              <td>12:34 PM</td>
+              <td>1:34 PM</td>
+              <td>2:34 PM</td>
+              <td>3:34 PM</td>
+            </tr>
+            <tr>
+              <td>Sand Lake Road</td>
+              <td>11:10 AM</td>
+              <td>12:40 PM</td>
+              <td>1:40 PM</td>
+              <td>2:40 PM</td>
+              <td>3:40 PM</td>
+            </tr>
+            <tr>
+              <td>Orlando Health / Amtrak</td>
+              <td>11:17 AM</td>
+              <td>12:47 PM</td>
+              <td>1:47 PM</td>
+              <td>2:47 PM</td>
+              <td>3:47 PM</td>
+            </tr>
+            <tr>
+              <td>Church Street</td>
+              <td>11:20 AM</td>
+              <td>12:50 PM</td>
+              <td>1:50 PM</td>
+              <td>2:50 PM</td>
+              <td>3:50 PM</td>
+            </tr>
+            <tr>
+              <td>Lynx Central</td>
+              <td>11:23 AM</td>
+              <td>12:53 PM</td>
+              <td>1:53 PM</td>
+              <td>2:53 PM</td>
+              <td>3:53 PM</td>
+            </tr>
+            <tr>
+              <td>AdventHealth</td>
+              <td>11:29 AM</td>
+              <td>12:59 PM</td>
+              <td>1:59 PM</td>
+              <td>2:59 PM</td>
+              <td>3:59 PM</td>
+            </tr>
+            <tr>
+              <td>Winter Park / Amtrak</td>
+              <td>11:36 AM</td>
+              <td>1:06 PM</td>
+              <td>2:06 PM</td>
+              <td>3:06 PM</td>
+              <td>4:06 PM</td>
+            </tr>
+            <tr>
+              <td>Maitland</td>
+              <td>11:43 AM</td>
+              <td>1:13 PM</td>
+              <td>2:13 PM</td>
+              <td>3:13 PM</td>
+              <td>4:13 PM</td>
+            </tr>
+            <tr>
+              <td>Altamonte Springs</td>
+              <td>11:48 AM</td>
+              <td>1:18 PM</td>
+              <td>2:18 PM</td>
+              <td>3:18 PM</td>
+              <td>4:18 PM</td>
+            </tr>
+            <tr>
+              <td>Longwood</td>
+              <td>11:52 AM</td>
+              <td>1:22 PM</td>
+              <td>2:22 PM</td>
+              <td>3:22 PM</td>
+              <td>4:22 PM</td>
+            </tr>
+            <tr>
+              <td>Lake Mary</td>
+              <td>11:58 AM</td>
+              <td>1:28 PM</td>
+              <td>2:28 PM</td>
+              <td>3:28 PM</td>
+              <td>4:28 PM</td>
+            </tr>
+            <tr>
+              <td>Sanford</td>
+              <td>12:05 PM</td>
+              <td>1:35 PM</td>
+              <td>2:35 PM</td>
+              <td>3:35 PM</td>
+              <td>4:35 PM</td>
+            </tr>
+            <tr>
+              <td>DeBary</td>
+              <td>12:13 PM</td>
+              <td>1:43 PM</td>
+              <td>2:43 PM</td>
+              <td>3:43 PM</td>
+              <td>4:43 PM</td>
+            </tr>
+          </tbody>
+        </table>
+
+         <br>
+        <h3>Northbound Evening Departure Times</h3>
+      <br>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Train Number</th>
+              <th>P326</th>
+              <th>P328</th>
+              <th>P330</th>
+              <th>P332</th>
+              <th>P334</th>
+              <th>P336</th>
+              <th>P338</th>
+              <th>P340</th>
+            </tr>
+            <tr>
+              <td>Poinciana</td>
+              <td>3:45 PM</td>
+              <td>4:15 PM</td>
+              <td>4:45 PM</td>
+              <td>5:25 PM</td>
+              <td>5:55 PM</td>
+              <td>6:25 PM</td>
+              <td>6:55 PM</td>
+              <td>9:55 PM</td>
+            </tr>
+            <tr>
+              <td>Kissimmee / Amtrak</td>
+              <td>3:53 PM</td>
+              <td>4:23 PM</td>
+              <td>4:53 PM</td>
+              <td>5:33 PM</td>
+              <td>6:03 PM</td>
+              <td>6:33 PM</td>
+              <td>7:03 PM</td>
+              <td>10:03 PM</td>
+            </tr>
+            <tr>
+              <td>Tupperware</td>
+              <td>3:59 PM</td>
+              <td>4:29 PM</td>
+              <td>4:59 PM</td>
+              <td>5:39 PM</td>
+              <td>6:09 PM</td>
+              <td>6:39 PM</td>
+              <td>7:09 PM</td>
+              <td>10:09 PM</td>
+            </tr>
+            <tr>
+              <td>Meadow Woods</td>
+              <td>4:04 PM</td>
+              <td>4:34 PM</td>
+              <td>5:04 PM</td>
+              <td>5:44 PM</td>
+              <td>6:14 PM</td>
+              <td>6:44 PM</td>
+              <td>7:14 PM</td>
+              <td>10:14 PM</td>
+            </tr>
+            <tr>
+              <td>Sand Lake Road</td>
+              <td>4:10 PM</td>
+              <td>4:40 PM</td>
+              <td>5:10 PM</td>
+              <td>5:50 PM</td>
+              <td>6:20 PM</td>
+              <td>6:50 PM</td>
+              <td>7:20 PM</td>
+              <td>10:20 PM</td>
+            </tr>
+            <tr>
+              <td>Orlando Health / Amtrak</td>
+              <td>4:17 PM</td>
+              <td>4:47 PM</td>
+              <td>5:17 PM</td>
+              <td>5:57 PM</td>
+              <td>6:27 PM</td>
+              <td>6:57 PM</td>
+              <td>7:27 PM</td>
+              <td>10:27 PM</td>
+            </tr>
+            <tr>
+              <td>Church Street</td>
+              <td>4:20 PM</td>
+              <td>4:50 PM</td>
+              <td>5:20 PM</td>
+              <td>6:00 PM</td>
+              <td>6:30 PM</td>
+              <td>7:00 PM</td>
+              <td>7:30 PM</td>
+              <td>10:30 PM</td>
+            </tr>
+            <tr>
+              <td>Lynx Central</td>
+              <td>4:23 PM</td>
+              <td>4:53 PM</td>
+              <td>5:23 PM</td>
+              <td>6:03 PM</td>
+              <td>6:33 PM</td>
+              <td>7:03 PM</td>
+              <td>7:33 PM</td>
+              <td>10:33 PM</td>
+            </tr>
+            <tr>
+              <td>AdventHealth</td>
+              <td>4:29 PM</td>
+              <td>4:59 PM</td>
+              <td>5:29 PM</td>
+              <td>6:09 PM</td>
+              <td>6:39 PM</td>
+              <td>7:09 PM</td>
+              <td>7:39 PM</td>
+              <td>10:39 PM</td>
+            </tr>
+            <tr>
+              <td>Winter Park / Amtrak</td>
+              <td>4:36 PM</td>
+              <td>5:06 PM</td>
+              <td>5:36 PM</td>
+              <td>6:16 PM</td>
+              <td>6:46 PM</td>
+              <td>7:16 PM</td>
+              <td>7:46 PM</td>
+              <td>10:46 PM</td>
+            </tr>
+            <tr>
+              <td>Maitland</td>
+              <td>4:43 PM</td>
+              <td>5:13 PM</td>
+              <td>5:43 PM</td>
+              <td>6:23 PM</td>
+              <td>6:53 PM</td>
+              <td>7:23 PM</td>
+              <td>7:53 PM</td>
+              <td>10:53 PM</td>
+            </tr>
+            <tr>
+              <td>Altamonte Springs</td>
+              <td>4:48 PM</td>
+              <td>5:18 PM</td>
+              <td>5:48 PM</td>
+              <td>6:28 PM</td>
+              <td>6:58 PM</td>
+              <td>7:28 PM</td>
+              <td>7:58 PM</td>
+              <td>10:58 PM</td>
+            </tr>
+            <tr>
+              <td>Longwood</td>
+              <td>4:52 PM</td>
+              <td>5:22 PM</td>
+              <td>5:52 PM</td>
+              <td>6:32 PM</td>
+              <td>7:02 PM</td>
+              <td>7:32 PM</td>
+              <td>8:02 PM</td>
+              <td>11:02 PM</td>
+            </tr>
+            <tr>
+              <td>Lake Mary</td>
+              <td>4:58 PM</td>
+              <td>5:28 PM</td>
+              <td>5:58 PM</td>
+              <td>6:38 PM</td>
+              <td>7:08 PM</td>
+              <td>7:38 PM</td>
+              <td>8:08 PM</td>
+              <td>11:08 PM</td>
+            </tr>
+            <tr>
+              <td>Sanford</td>
+              <td>5:05 PM</td>
+              <td>5:35 PM</td>
+              <td>6:05 PM</td>
+              <td>6:45 PM</td>
+              <td>7:15 PM</td>
+              <td>7:45 PM</td>
+              <td>8:15 PM</td>
+              <td>11:15 PM</td>
+            </tr>
+            <tr>
+              <td>DeBary</td>
+              <td>5:13 PM</td>
+              <td>5:43 PM</td>
+              <td>6:13 PM</td>
+              <td>6:53 PM</td>
+              <td>7:23 PM</td>
+              <td>7:53 PM</td>
+              <td>8:23 PM</td>
+              <td>11:23 PM</td>
+            </tr>
+          </tbody>
+        </table>
+
     </div>
 </div>
 <!--above northbound reveal div close -->
