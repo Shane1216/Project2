@@ -11,7 +11,8 @@ $.get("/api/all", function(data) {
         row.addClass("passenger")
         row.append("<p>" + data[i].p_email)
         row.append("<p>" + data[i].p_password)
-        row.append("<p>" + data[i].p_name)
+        row.append("<p>" + data[i].p_firstname)
+        row.append("<p>" + data[i].p_lasttname)
         row.append("<p>" + data[i].p_address1)
         row.append("<p>" + data[i].p_address2)
         row.append("<p>" + data[i].p_city)
@@ -36,9 +37,8 @@ $.get("/api/all", function(data) {
   
     // Make a customer object
     let newCustomer = {
-      author: $("#author").val().trim(),
-      body: $("#chirp-box").val().trim(),
-      created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+      p_id: $("#pid").val().trim(),
+      p_createdat: moment().format("YYYY-MM-DD HH:mm:ss")
     };
   
     console.log(newCustomer);

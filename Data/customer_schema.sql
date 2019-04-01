@@ -1,6 +1,6 @@
 USE sunrail;
 
-CREATE TABLE passenger (
+CREATE TABLE passengers (
     p_id INT NOT NULL AUTO_INCREMENT,
     p_email VARCHAR(50) NOT NULL,
     p_password VARCHAR (50) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE passenger (
 PRIMARY KEY(p_id)
 );
 
-CREATE TABLE payment (
+CREATE TABLE payments (
     pay_id INT NOT NULL AUTO_INCREMENT,
     cust_id INT NOT NULL,
     pay_type INT NOT NULL,
