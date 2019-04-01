@@ -1,80 +1,49 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Load index page
-  app.get("/", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
-<<<<<<< HEAD
-      res.render("index", {
-        msg: "Welcome!",
-        trains: dbSunrail
-      });
+module.exports = function (app) {
+  // Load home page
+  app.get("/", function (req, res) {
+    res.render("index", {
+    });
+  });
+
+  app.get("/index", function (req, res) {
+    res.render("index", {
     });
   });
 
   // Load Northbound page
-  app.get("/northbound", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
-      res.render("northbound", {
-        trains: dbSunrail
-      });
+  app.get("/northbound", function (req, res) {
+    res.render("northbound", {
     });
   });
 
   // Load Southhbound page
-  app.get("/southbound", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
-      res.render("southbound", {
-        trains: dbSunrail
-      });
+  app.get("/southbound", function (req, res) {
+    res.render("southbound", {
     });
   });
 
   // Load Map page
-  app.get("/map", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
-      res.render("map", {
-        trains: dbSunrail
-      });
+  app.get("/map", function (req, res) {
+    res.render("map", {
     });
   });
 
   // Load Tickets page
-  app.get("/tickets", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
+  app.get("/tickets", function (req, res) {
       res.render("tickets", {
-        trains: dbSunrail
       });
     });
-  });
 
-  app.get("/login", function(req, res) {
-    db.Sunrail_stops.findAll({}).then(function(dbSunrail) {
+  // Load Login page
+  app.get("/login", function (req, res) {
       res.render("login", {
-        trains: dbSunrail
-=======
-      res.render("home", {
-        msg: "Welcome!",
-        trains: dbSunrail
->>>>>>> 25ec6d1aa52019aa4dcad39ba1682eb226843003
-      });
-    });
-  });
-
-  // Load example page and pass in an example by id
-  app.get("/stop/:id", function(req, res) {
-    db.Sunrail_stops.findOne({ where: { id: req.params.id } }).then(function(
-      dbSunrail
-    ) {
-      console.log(dbSunrail);
-      res.render("example", {
-        trains: dbSunrail
-      });
     });
   });
 
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.render("404");
   });
 };
