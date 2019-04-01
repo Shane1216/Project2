@@ -9,8 +9,8 @@ $.get("/api/all", function(data) {
   
         var row = $("<div>");
         row.addClass("passenger")
-        row.append("<p>" + data[i].p_password)
         row.append("<p>" + data[i].p_email)
+        row.append("<p>" + data[i].p_password)
         row.append("<p>" + data[i].p_name)
         row.append("<p>" + data[i].p_address1)
         row.append("<p>" + data[i].p_address2)

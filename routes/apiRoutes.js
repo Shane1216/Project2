@@ -59,9 +59,9 @@ module.exports = function (app) {
     console.log("Passenger Data:");
     console.log(req.body);
 
-    var dbQuery = "INSERT INTO passengers (p_password, p_name, p_email, p_address2, p_address1, p_state, p_city, p_zip) VALUES (?,?,?,?,?,?,?,?)";
+    var dbQuery = "INSERT INTO passengers (p_email, p_password, p_firstname, p_lastname, p_address1, p_address2, p_state, p_city, p_zip) VALUES (?,?,?,?,?,?,?,?,?)";
   
-    connection.query(dbQuery, [req.body.pass_name, req.body.body, req.body.created_at], function(err, result) {
+    connection.query(dbQuery, [req.body.passenger, req.body.created_at], function(err, result) {
       if (err) throw err;
       console.log("Passenger Successfully Saved!");
       res.end();
