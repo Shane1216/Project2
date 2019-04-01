@@ -109,10 +109,6 @@ nav a:hover::before {
 /*media screen from Reuben*/
 
 @media screen and (max-width: 1200px){
-
-header ul {
-  
-    }
 header::after {
   content: '';
   display: table;
@@ -172,8 +168,6 @@ img {
 
 
 @media screen and (max-width: 960px){
-header ul {
-    }
 header::after {
   content: '';
   display: table;
@@ -233,10 +227,6 @@ img {
 
 
 @media screen and (max-width: 768px){
-
-header ul {
-  
-    }
 header::after {
   content: '';
   display: table;
@@ -295,10 +285,6 @@ img {
 }
 
 @media screen and (max-width: 640px){
-
-header ul {
-
-    }
 header::after {
   content: '';
   display: table;
@@ -359,10 +345,6 @@ nav a:hover::before {
 
 
 @media screen and (max-width: 580px){
-
-header ul {
-  
-    }
 header::after {
   content: '';
   display: table;
@@ -423,10 +405,6 @@ nav a:hover::before {
 }
 
 @media screen and (max-width: 537px){
-
-header ul {
-  
-    }
 header::after {
   content: '';
   display: table;
@@ -487,10 +465,6 @@ nav a:hover::before {
 }
 
 @media screen and (max-width: 360px){
-
-header ul {
-  
-    }
 header::after {
   content: '';
   display: table;
